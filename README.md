@@ -58,3 +58,10 @@ imp
 
 
 export DISPLAY=:0
+
+
+./popup.sh images/IMG_7186.PNG  
+
+
+
+./popup.sh images/rifa.JPG
