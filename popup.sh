@@ -1,13 +1,18 @@
 #!/bin/bash
 
-# Usage: ./popup.sh image.png
+# usage: ./popup.sh images/file.jpg
 
 IMAGE="$1"
 
-if [ -z "$IMAGE" ]; then
-    echo "Usage: ./popup.sh <image-file>"
+if [ ! -f "$IMAGE" ]; then
+    echo "Error: Image '$IMAGE' not found!"
     exit 1
 fi
 
-# Show the image fullscreen for 4 seconds
-feh -F -Y -D 4 "$IMAGE"
+# show image for 4 seconds
+feh -F "$IMAGE" &
+PID=$!
+
+sleep 4
+
+kill $PID

@@ -43,3 +43,9 @@ This is a simple script that shows an image on an Ubuntu machine for 4 seconds.
 Replace `image.png` with any image stored in the repo.
 
 The image will appear fullscreen for 4 seconds and then close automatically.
+
+
+pwd
+ls
+ls images
+file images/rifa.jpg
