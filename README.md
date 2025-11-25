@@ -49,3 +49,12 @@ pwd
 ls
 ls images
 file images/rifa.jpg
+
+
+
+
+imp
+
+
+
+export DISPLAY=:0
